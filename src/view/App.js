@@ -1,5 +1,5 @@
 import './App.css';
-import CoverPhoto from './view/components/CoverPhoto';
+import CoverPhoto from './components/CoverPhoto';
 
 function App() {
   return (
