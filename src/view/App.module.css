@@ -1,0 +1,10 @@
+.App {
+    display: flex;
+    justify-content: center;
+}
+
+.AppContainer {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 15px;
+}
