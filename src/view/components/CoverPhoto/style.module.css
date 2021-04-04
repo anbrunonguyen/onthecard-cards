@@ -3,3 +3,8 @@
 .CoverPhoto {
     color: var(--color-red);
 }
+
+.Center {
+    display: flex;
+    justify-content: center;
+}
