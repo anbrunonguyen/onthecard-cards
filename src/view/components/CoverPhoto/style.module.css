@@ -1,5 +1,19 @@
-@import url('../../styles/variables.css');
+@import url("../../styles/variables.css");
 
 .CoverPhoto {
-    color: var(--color-red);
+}
+.GridContainer {
+  display: grid;
+  grid-template-columns: 800px;
+  padding: 10px;
+  justify-content: center;
+}
+.Item1 {
+  background-color: navy;
+}
+.BackGroundImg {
+  height: 75%;
+}
+img {
+  object-fit: cover;
 }
