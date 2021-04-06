@@ -1,6 +1,7 @@
 @import url("../../styles/variables.css");
 
 .CoverPhoto {
+  color: var(--color-red);
 }
 .GridContainer {
   display: grid;
@@ -16,4 +17,9 @@
 }
 img {
   object-fit: cover;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
 }
