@@ -4,10 +4,23 @@
   padding: 20px;
   margin: 20px 0;
 }
-.Style1 p {
-  font-weight: 500;
-  font-size: 20px;
-}
+
 .Style1 h4 {
   font-weight: 900;
+}
+
+.Style1 ul {
+  font-size: 20px;
+  padding: 0;
+}
+
+.Style1 ul>li {
+  align-items: center;
+  display: flex;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.Style1 ul>li>img {
+  margin-right: 10px;
 }
