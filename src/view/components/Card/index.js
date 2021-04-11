@@ -9,16 +9,16 @@ function Card({ style, data }) {
       renderItem = <Style data={data} />;
       break;
     case CardStye.S2:
-      renderItem = <Style data={data} />;
+      renderItem = <Style />;
       break;
     case CardStye.S3:
-      renderItem = <Style data={data} />;
+      renderItem = <Style />;
       break;
     case CardStye.S4:
-      renderItem = <Style data={data} />;
+      renderItem = <Style />;
       break;
     case CardStye.S5:
-      renderItem = <Style data={data} />;
+      renderItem = <Style />;
       break;
     default:
       renderItem = <Style />;
