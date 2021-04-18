@@ -6,8 +6,14 @@ function Style({ data }) {
   return data ? (
     <>
       <div>
+        <div className="img2">
+          <img
+            src="https://aboutme.vn/wp-content/uploads/2021/01/cover-1024x576.jpg"
+            alt=""
+          />
+        </div>
         <div className="main-content">
-          <div className="container mt-7">
+          <div className="container ">
             {/* Table */}
             <div className="row">
               <div className="col-xl-8 m-auto order-xl-2 mb-5 mb-xl-0">

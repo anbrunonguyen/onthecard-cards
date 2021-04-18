@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import CoverPhoto from "./components/CoverPhoto";
 import Card from "./components/Card";
 import { CardStye } from "../core/constant";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const demoDatas = [
   {
@@ -128,6 +128,7 @@ const demoDatas = [
   },
 ];
 function App() {
+  const [active, setactive] = useState(1);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -135,15 +136,24 @@ function App() {
   return (
     <div className={classes.App}>
       <div1 data-aos="fade-down" className={classes.gridContainer}>
-        <div className={classes.item1}>
-          <CoverPhoto />
-          {demoDatas.map((data) => (
-            <Card style={CardStye.S1} data={data} />
-          ))}
-          <Card style={CardStye.S2} data={demoDatas} />
-          {/* <Card style={CardStye.S4} data={demoDatas} /> */}
-          {/* <Card style={CardStye.S3} data={demoDatas} /> */}
-        </div>
+        {active === 1 ? (
+          <div className={classes.item1}>
+            <CoverPhoto />
+            {demoDatas.map((data) => (
+              <Card style={CardStye.S1} data={data} />
+            ))}
+          </div>
+        ) : (
+          <div className={classes.item1}>
+            <Card style={CardStye.S2} data={demoDatas} />
+            {/* <Card style={CardStye.S4} data={demoDatas} /> */}
+            {/* <Card style={CardStye.S3} data={demoDatas} /> */}
+          </div>
+        )}
+        <ul className={classes.ul_active}>
+          <li onClick={() => setactive(1)}>1</li>
+          <li onClick={() => setactive(2)}>2</li>
+        </ul>
       </div1>
     </div>
   );
