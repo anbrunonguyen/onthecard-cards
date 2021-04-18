@@ -160,6 +160,9 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
+.card-header a {
+  text-decoration: none;
+}
 
 .card-header:first-child {
   border-radius: calc(0.375rem - 1px) calc(0.375rem - 1px) 0 0;
