@@ -1,0 +1,32 @@
+.Information {
+  box-shadow: 0 10px 10px -1px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.Information h4 {
+  font-weight: 900;
+}
+
+.Information ul {
+  font-size: 20px;
+  padding: 0;
+}
+
+.Information ul>li {
+  align-items: center;
+  display: flex;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.Information ul>li:hover {
+  transform: scale(1.02);
+  transition: 0.4s
+}
+
+.Information ul>li>img {
+  margin-right: 10px;
+}

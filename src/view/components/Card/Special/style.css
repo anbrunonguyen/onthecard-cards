@@ -2,12 +2,14 @@
   height: 360px;
   width: 100%;
 }
+
 .img2 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+
 .btn {
   font-size: 1rem;
   font-weight: 600;
@@ -144,7 +146,7 @@
   background-clip: border-box;
 }
 
-.card > hr {
+.card>hr {
   margin-right: 0;
   margin-left: 0;
 }
@@ -160,6 +162,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
+
 .card-header a {
   text-decoration: none;
 }
@@ -292,6 +295,7 @@ button.bg-default:focus {
 .text-center {
   text-align: center !important;
 }
+
 .text-center-again {
   width: max-content;
   margin: auto;
@@ -302,6 +306,7 @@ button.bg-default:focus {
 }
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -381,6 +386,7 @@ button.bg-default:focus {
   display: flex;
   align-items: center;
 }
+
 .font-weight-300 img {
   margin: 8px;
 }
@@ -440,17 +446,17 @@ button.bg-default:focus {
   padding: 1rem 0;
 }
 
-.card-profile-stats > div {
+.card-profile-stats>div {
   margin-right: 1rem;
   padding: 0.875rem;
   text-align: center;
 }
 
-.card-profile-stats > div:last-child {
+.card-profile-stats>div:last-child {
   margin-right: 0;
 }
 
-.card-profile-stats > div .heading {
+.card-profile-stats>div .heading {
   font-size: 1.1rem;
   font-weight: bold;
   display: block;
@@ -458,7 +464,7 @@ button.bg-default:focus {
   margin: auto;
 }
 
-.card-profile-stats > div .description {
+.card-profile-stats>div .description {
   font-size: 0.875rem;
   color: #adb5bd;
 }
@@ -591,11 +597,13 @@ p {
   text-align: right;
   width: 150px;
 }
+
 .course-info h4 {
   display: flex;
   align-items: center;
   margin: 5px;
 }
+
 .course-info h4 img {
   margin: 0 8px;
 }
@@ -606,6 +614,7 @@ p {
   height: 5px;
   width: 100%;
 }
+
 .progress_center {
   align-self: center;
   display: flex;
@@ -823,7 +832,8 @@ body {
   text-align: center;
   padding: 4em 0;
 }
-.contentInfo > h1 {
+
+.contentInfo>h1 {
   margin: 10px 0;
   font-size: 1.17em;
 }
@@ -832,16 +842,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 500px) {
   .cardsInfo {
     display: block;
   }
+
   .cardsInfo .cardInfo {
     width: 100%;
   }
+
   .contentInfo .container_pay {
     display: block;
   }
+
   .container_pay .flip-boxes {
     width: 100%;
   }
@@ -851,6 +865,7 @@ body {
   .cardsInfo .cardInfo {
     width: 200px;
   }
+
   .container_pay .flip-boxes {
     width: 200px;
   }
@@ -863,6 +878,7 @@ body {
   perspective: 150em;
   transition: 5s linear;
 }
+
 .card__side {
   position: absolute;
   top: 0;
@@ -876,6 +892,7 @@ body {
   transition: all 0.6s ease;
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
 }
+
 .card__side--front {
   background-color: #fff;
 }
@@ -887,6 +904,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .card__side--back-1 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
@@ -911,21 +929,26 @@ body {
   text-transform: uppercase;
   padding: 1em 0;
 }
+
 .card__description img {
   margin: 0 4px;
 }
+
 /* pay */
-.pay > h1 {
+.pay>h1 {
   margin: 10px 0;
 }
+
 .container_pay {
   display: flex;
   justify-content: space-between;
 }
+
 .flip-boxes {
   justify-content: center;
   width: 250px;
 }
+
 .flip-box {
   display: flex;
   align-content: stretch;
@@ -938,6 +961,7 @@ body {
   -webkit-perspective: 1000;
   perspective: 1000;
 }
+
 .flip-box:hover .back_pay {
   transform: rotateY(0deg);
   z-index: 10;
@@ -974,6 +998,7 @@ body {
   z-index: -1;
   transform: rotateY(-180deg);
 }
+
 .back_pay:after {
   content: "";
   position: absolute;
@@ -991,6 +1016,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .front_pay .content {
   font-size: 2rem;
 }

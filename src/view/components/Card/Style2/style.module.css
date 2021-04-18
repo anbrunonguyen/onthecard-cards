@@ -1,0 +1,49 @@
+.Style2 {
+  box-shadow: 0 10px 10px -1px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+}
+
+.Style2 .Title {
+  background-color: #2A265F;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Style2 .Content {
+  padding: 5px;
+}
+
+.Style2 .Title h3 {
+  font-weight: 900;
+}
+
+.Style2 ul {
+  font-size: 20px;
+  padding: 0;
+}
+
+.Style2 ul>li {
+  align-items: center;
+  display: flex;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.Style2 ul>li:hover {
+  transform: scale(1.02);
+  transition: 0.4s
+}
+
+.Style2 ul>li>img {
+  margin-right: 10px;
+}
