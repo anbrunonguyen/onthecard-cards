@@ -17,7 +17,7 @@ function CoverPhoto() {
             src="https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="Atul Prajapati"
           />
-          <h2>David jasdsadasmes</h2>
+          {/* <h2>David jasdsadasmes</h2>
           <ul>
             <li>
               <a href="https://github.com/atuljustano">
@@ -39,7 +39,7 @@ function CoverPhoto() {
                 <i className="fab fa-youtube" />
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       {/* avatar */}

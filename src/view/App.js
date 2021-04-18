@@ -6,19 +6,15 @@ import Card from "./components/Card";
 import { CardStye } from "../core/constant";
 import { useEffect } from "react";
 
-const demoData = {
-  introduce: {
+const demoDatas = [
+  {
     title: "Giới thiệu",
     contents: [
-      {
-        info: "Founder HereStores.vn",
-      },
-      {
-        info: "Founder Aboutme.vn",
-      },
+      { icon: null, info: "Founder HereStores.vn" },
+      { icon: null, info: "Founder Aboutme.vn" },
     ],
   },
-  job: {
+  {
     title: "Nghề nghiệp",
     contents: [
       {
@@ -43,7 +39,7 @@ const demoData = {
       },
     ],
   },
-  contact: {
+  {
     title: "Thông tin liên lạc",
     contents: [
       {
@@ -59,11 +55,11 @@ const demoData = {
         info: "ducanh3010@gmail.com",
       },
       {
-        icon: "https://aboutme.vn/wp-content/uploads/2021/01/mail-1-1.svg",
+        icon: "https://aboutme.vn/wp-content/uploads/2021/01/zalo-1.svg",
         info: "Zalo: 0989825568",
       },
       {
-        icon: "https://aboutme.vn/wp-content/uploads/2021/01/zalo-1.svg",
+        icon: "https://aboutme.vn/wp-content/uploads/2021/01/fb.svg",
         info: "Facebook: mr.heo3010",
       },
       {
@@ -92,7 +88,7 @@ const demoData = {
       },
     ],
   },
-  payment: {
+  {
     title: "Thanh toán",
     contents: [
       {
@@ -117,7 +113,7 @@ const demoData = {
       },
     ],
   },
-  infor: {
+  {
     title: "Thông tin cá nhân",
     contents: [
       {
@@ -130,7 +126,7 @@ const demoData = {
       },
     ],
   },
-};
+];
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -141,7 +137,12 @@ function App() {
       <div1 data-aos="fade-down" className={classes.gridContainer}>
         <div className={classes.item1}>
           <CoverPhoto />
-          <Card style={CardStye.S1} data={demoData} />
+          {demoDatas.map((data) => (
+            <Card style={CardStye.S1} data={data} />
+          ))}
+          <Card style={CardStye.S2} data={demoDatas} />
+          {/* <Card style={CardStye.S4} data={demoDatas} /> */}
+          {/* <Card style={CardStye.S3} data={demoDatas} /> */}
         </div>
       </div1>
     </div>
