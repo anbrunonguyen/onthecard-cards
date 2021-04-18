@@ -5,6 +5,7 @@ import CoverPhoto from './components/CoverPhoto';
 import Card from './components/Card';
 import { CardStye } from '../core/constant';
 import { useEffect, useState } from 'react';
+import { AOSAnimation } from '../core/constant';
 
 const demoDatas = [
   {
@@ -135,7 +136,7 @@ function App() {
 
   return (
     <div className={classes.App}>
-      <div data-aos='fade-down' className={classes.gridContainer}>
+      <div data-aos={AOSAnimation.fadeDown} className={classes.gridContainer}>
         {style !== CardStye.special ? (
           <div className={classes.item1}>
             <CoverPhoto />
