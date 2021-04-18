@@ -146,8 +146,6 @@ function App() {
         ) : (
           <div className={classes.item1}>
             <Card style={CardStye.S2} data={demoDatas} />
-            {/* <Card style={CardStye.S4} data={demoDatas} /> */}
-            {/* <Card style={CardStye.S3} data={demoDatas} /> */}
           </div>
         )}
         <ul className={classes.ul_active}>
